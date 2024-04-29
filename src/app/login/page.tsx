@@ -69,6 +69,7 @@ export default function Login() {
             <div className="grid">
               <label>Email</label>
               <input
+                className="bg-white text-black"
                 type="text"
                 name="email"
                 value={data?.email}
@@ -78,6 +79,7 @@ export default function Login() {
             <div className="grid">
               <label>Password</label>
               <input
+                className="bg-white text-black"
                 type="password"
                 name="password"
                 value={data?.password}
@@ -99,6 +101,7 @@ export default function Login() {
             <div className="grid">
               <label>Email</label>
               <input
+                className="bg-white text-black"
                 type="text"
                 name="email"
                 value={data?.email}
@@ -115,7 +118,7 @@ export default function Login() {
                 className="px-4 py-2 bg-blue-500 rounded cursor-pointer"
                 onClick={sendResetPassword}
               >
-                Reset my password
+                Olvidé mi contraseña
               </button>
             </div>
           </div>
@@ -124,7 +127,7 @@ export default function Login() {
           className="cursor-pointer hover:underline"
           onClick={() => setResetPassword(!resetPassword)}
         >
-          {resetPassword ? "Login" : "Reset my password"}
+          {resetPassword ? "Login" : "Cambiar mi contraseña"}
         </p>
       </div>
     );
